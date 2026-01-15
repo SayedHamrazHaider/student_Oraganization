@@ -5,3 +5,12 @@ body{
     height: 100vh;
     background-attachment: fixed;
 }
+.nav-item{
+      border: 2px solid white;
+      border-radius: 15px;
+      margin-left: 5px;
+}
+.nav-item:hover{
+      background-color: blue;
+      color: white;
+}

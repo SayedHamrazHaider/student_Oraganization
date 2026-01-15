@@ -11,76 +11,129 @@
 
 </head>
 <body>
-        <div class="container-fluid">
-        <nav class="navbar navbar-expand-sm bg-dark fixed-top">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
             <div class="container-fluid">
-                <img src="images/federatiuon_logo.png" alt="logo" width="50px" height="50px">
-                    <!-- Links -->
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="team.html">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="events.html">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Contact.html">Contact</a>
-                    </li>
-                    </ul>
+
+            <!-- Logo -->
+            <img src="images/federatiuon_logo.png" alt="logo" width="50" height="50"> <h4 style="color: aliceblue; text-align:center; margin-left:10px">ASF</h4>
+
+            <!-- Toggle Button (for mobile) -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                </li>
+                </ul>
+            </div>
+
             </div>
         </nav>
     </div>
-    <div class="container">
-        <div class="container-fluid">    
-            <!-- form -->
-            <form action="/action_page.php">
-                <h3 style="color: aliceblue; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; text-align:center;"><i>Membership Form</i></h3>
-                <div class="mb-3 mt-3">
-                    <label for="text" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your fullname" name="email">
-                </div>
-                <div class="mb-3 mt-3">
-                    <label for="text" class="form-label">Father Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your fathername" name="email">
-                </div>
-                <div class="mb-3 mt-3">
-                    <label for="text" class="form-label">Study Level</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your class" name="email">
-                </div>
-                <div class="mb-3 mt-3">
-                    <label for="text" class="form-label">Institute Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your clg , school , university" name="email">
-                </div>
-                <div class="mb-3">
-                    <label for="phoneNumber" class="form-label">Contact Number</label>
-                    <input type="number" class="form-control" id="phoneNumber" placeholder="enter phone number">
-                </div>
-                <div class="mb-3 mt-3">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                </div>
-                <div class="row justify-content">
-                    <div class="col-md-6">
-                    <form>
-                        <div class="mb-3">
-                        <label class="form-label">Upload Image</label>
-                        <input type="file" class="form-control" accept="image/*">
-                        </div>
-                        <button class="btn btn-info">Upload</button>
-                    </form>
-                    </div>
-                </div>
-                <br>
-                <p style="color: white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><i>We request you to carefully review all entered details before final submission.</i></p>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+
+    <div class="container my-5 ">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10 col-12">
+
+        <!-- Form -->
+        <form action="/action_page.php">
+
+            <h3 style="color: aliceblue; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; text-align:center; margin-top:70px">
+            <i>Membership Form</i>
+            </h3>
+
+            <!-- Full Name -->
+            <div class="mb-3 mt-3">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" placeholder="Enter your fullname">
+            </div>
+
+            <!-- Father Name -->
+            <div class="mb-3 mt-3">
+            <label class="form-label">Father Name</label>
+            <input type="text" class="form-control" placeholder="Enter your fathername">
+            </div>
+
+            <!-- Study Level -->
+            <div class="mb-3 mt-3">
+            <label class="form-label">Study Level</label>
+            <input type="text" class="form-control" placeholder="Enter your class">
+            </div>
+
+            <!-- Institute Name -->
+            <div class="mb-3 mt-3">
+            <label class="form-label">Institute Name</label>
+            <input type="text" class="form-control" placeholder="Enter your clg , school , university">
+            </div>
+
+            <!-- Contact Number -->
+            <div class="mb-3">
+            <label class="form-label">Contact Number</label>
+            <input type="number" class="form-control" placeholder="enter phone number">
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3 mt-3">
+            <label class="form-label">Email:</label>
+            <input type="email" class="form-control" placeholder="Enter email">
+            </div>
+
+            <!-- Upload Image -->
+            <div class="mb-3">
+            <label class="form-label">Upload Image</label>
+            <input type="file" class="form-control" accept="image/*">
+            </div>
+
+            <button class="btn btn-info mb-3">Upload</button>
+
+            <!-- Note -->
+            <p style="color: white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+            <i>We request you to carefully review all entered details before final submission.</i>
+            </p>
+
+            <!-- Submit -->
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+
+        </form>
+
         </div>
     </div>
+    </div>
+    
+      <!-- Footer -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <img src="images/federatiuon_logo.png" alt="logo" width="50" height="50">
+          <p>Social Link</p>
+          <div class="flex-wrap justify-content-center gap-3">
+            <a href="www.facebook.com">facebook</a>
+            <a href="www.facebook.com">Instagram</a>
+            <a href="www.facebook.com">Youtube</a>
+            <p>&copy; 2026 Anwaria Students Federation | All Rights Reserved</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </html>

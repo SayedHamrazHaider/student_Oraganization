@@ -1,0 +1,28 @@
+body {
+      background-image: url(images/bg-2.jpeg);
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-attachment: fixed;
+}
+
+.contact-header {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-decoration: double;
+      color: white;
+      margin-top: 90px;
+      text-align: center;
+}
+
+.contact-card {
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.nav-item{
+      border: 2px solid white;
+      border-radius: 15px;
+      margin-left: 5px;
+}
+.nav-item:hover{
+      background-color: blue;
+      color: white;
+}
